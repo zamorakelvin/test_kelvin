@@ -1,8 +1,8 @@
-const http = require("http"),;
+const http = require("http");
 const fs = require("fs");
 
-http.createServer(=>(req,res){
-    fs.readFile("./index.html",=>(err,html){
+http.createServer(function(req,res){
+    fs.readFile("./index.html",function(err,html){
         res.write(html);
         res.end();
     });
